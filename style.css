@@ -1,0 +1,52 @@
+*{
+    background-color: black;
+    background-size: cover;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    overflow: hidden;
+}
+
+.container{
+    font-size: large;
+    width: fit-content;
+    height: max-content;
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    margin: 0%;
+    height: 100vh;
+}
+
+.sun{
+    height: 150px;
+    width: 150px;
+    border: 2px thin rgba(0, 0, 0, 2);
+    border-radius: 50%;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(360deg);
+    transform-style: preserve-3d;
+    position: fixed;
+    top: 200px;
+    left: 700px;
+}
+
+.moon{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+    margin: 0%;
+    transform: rotate(360deg);
+    transition: grey 2s ease-in-out 4ms;
+    transform: translate(20px, 50px);
+    transform: skew(90deg);
+}
