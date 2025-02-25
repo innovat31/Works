@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="survey-container">
+        <h2>Restaurant Feedback Survey</h2>
+        <p>We appreciate your feedback to improve our service!</p>
+        
+        <form action="#" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="visit-date">Date of Visit:</label>
+            <input type="date" id="visit-date" name="visit-date" required>
+
+            <label>How would you rate your experience?</label>
+            <div class="rating">
+                <input type="radio" id="excellent" name="rating" value="Excellent">
+                <label for="excellent">Excellent</label>
+                
+                <input type="radio" id="good" name="rating" value="Good">
+                <label for="good">Good</label>
+                
+                <input type="radio" id="average" name="rating" value="Average">
+                <label for="average">Average</label>
+                
+                <input type="radio" id="poor" name="rating" value="Poor">
+                <label for="poor">Poor</label>
+            </div>
+
+            <label>What dishes did you enjoy the most?</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="pizza" name="favorite-dish" value="Pizza">
+                <label for="pizza">Pizza</label>
+                
+                <input type="checkbox" id="pasta" name="favorite-dish" value="Pasta">
+                <label for="pasta">Pasta</label>
+                
+                <input type="checkbox" id="salad" name="favorite-dish" value="Salad">
+                <label for="salad">Salad</label>
+                
+                <input type="checkbox" id="dessert" name="favorite-dish" value="Dessert">
+                <label for="dessert">Dessert</label>
+            </div>
+
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments" rows="4" placeholder="Tell us about your experience..."></textarea>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </div>
+</body>
+</html>
